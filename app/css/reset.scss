@@ -26,6 +26,9 @@ body {
 ol, ul {
     list-style: none
 }
+a {
+    text-decoration: none;
+}
 table {
     border-collapse: collapse;
     border-spacing: 0
@@ -47,4 +50,9 @@ hr {
     color: #000;
     background-color: #000;
     height: 1px
+}
+// mobile maximum
+body {
+    max-width: 1200px;
+    margin: 0px auto;
 }
