@@ -16,16 +16,15 @@
 	@include flex($direction);
 }
 
-@mixin panel ($bgColor:#fff,$padding:0px,$margin:20px 0px,$height:112px,$textPadding: 0px 32px,$color:#333,$fontSize: 32px) {
-	background: $bgcolor;
+@mixin panel ($bgColor: #fff,$padding:0px,$margin:20px 0px,$height:112px,$textPadding: 0px 32px,$color:#333,$fontSize: 32px) {
+	background: $bgColor;
 	padding: $padding;
 	margin: $margin;
-	height: $height;
 	> h4 {
 		height: $height;
 		line-height: $height;
 		padding: $padding;
-		text-oveflow: ellipsis;
+		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
 		text-align: center;

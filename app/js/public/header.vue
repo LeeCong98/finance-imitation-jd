@@ -38,6 +38,7 @@
 		left: 0px;
 		right: 0px;
 		background: url("//m.jr.jd.com/spe/qyy/main/images/jr-logo.png") center center no-repeat;
+		background-color: white;
 		background-size: auto 50%;
 		font-size: 32px;
 		z-index: 100;

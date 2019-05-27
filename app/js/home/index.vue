@@ -2,12 +2,22 @@
     <div :class="$style.home">
         <Heador />
 				<Hslider />
+				<Handpick />
+				<Borrow />
+				<Product />
+				<Life />
+				<Footer />
     </div>
 </template>
 
 <script>
 import Heador from '../public/header.vue'
 import Hslider from './hslider.vue'
+import Handpick from './handpick.vue'
+import Borrow from './borrow.vue'
+import Product from './product.vue'
+import Life from './life.vue'
+import Footor from './../public/footer.vue'
 export default {
 	data () {
 		return {
@@ -19,7 +29,12 @@ export default {
 	},
 	components: {
 		Heador,
-		Hslider
+		Hslider,
+		Handpick,
+		Borrow,
+		Product,
+		Life,
+		Footor
 	}
 }
 </script>

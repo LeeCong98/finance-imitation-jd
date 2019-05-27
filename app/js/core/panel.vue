@@ -15,10 +15,10 @@
 				type: String,
 				default: ''
 			}
-		}
+		},
 		data () {
 			return {
-				panelClass: 'panel'
+				panelClass: 'panel-container'
 			}
 		},
 		methods: {
@@ -27,8 +27,8 @@
 	}
 </script>
 <style lang="scss">
-	@import '../../element.scss';
-	.panel {
-		@include 'panel';
+	@import '../../css/element.scss';
+	.panel-container {
+		@include panel;
 	}
 </style>

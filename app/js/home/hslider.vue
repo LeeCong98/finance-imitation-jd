@@ -18,7 +18,7 @@
 <script>
 	import Slider from '../core/slider.vue'
 	// #引入数据model
-	import { items, entries} from '../../model/hslider_model.js'
+	import { items, entries} from '../../model/home_model.js'
 	export default {
 		data () {
 			// #注意后续数据的更新;
@@ -36,7 +36,7 @@
 <style lang="scss" module>
 	@import '../../css/element.scss';
 	.slider {
-		margin-top: 120px;
+		margin-top: 105px;
 		img {
 			display: block;
 			width: 100%;
@@ -47,11 +47,12 @@
 		background: white;
 		> div {
 			width: 25%;
-			padding-top: 25px;
+			padding-top: 30px;
 		}
 		.item {
 			text-align: center;
 			display: block;
+			cursor: pointer;
 			 img {
 			   width: 90px;
 			   height: 90px;

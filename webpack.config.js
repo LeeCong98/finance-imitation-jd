@@ -25,7 +25,7 @@ module.exports = env => {
   }
   return {
     entry: [
-      './app/js/viewport.js',
+      './app/viewport.js',
       './app/js/main.js'
     ],
     devServer: {
