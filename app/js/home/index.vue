@@ -6,7 +6,8 @@
 				<Borrow />
 				<Product />
 				<Life />
-				<Footer />
+				<Footor />
+				<Navbar />
     </div>
 </template>
 
@@ -18,6 +19,7 @@ import Borrow from './borrow.vue'
 import Product from './product.vue'
 import Life from './life.vue'
 import Footor from './../public/footer.vue'
+import Navbar from './../public/navbar.vue'
 export default {
 	data () {
 		return {
@@ -34,7 +36,8 @@ export default {
 		Borrow,
 		Product,
 		Life,
-		Footor
+		Footor,
+		Navbar
 	}
 }
 </script>
@@ -43,5 +46,6 @@ export default {
   .home{
     color: red;
     font-size: 80px;
+    padding-bottom: 100px;
   }
 </style>

@@ -14,7 +14,7 @@
 
 <script>
 	import Panel from '../core/panel.vue'
-	import moneyCast from '../core/production.vue'
+	import moneyCast from '../public/production.vue'
 	import { production } from './../../model/home_model.js'
 	export default {
 		data () {

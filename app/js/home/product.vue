@@ -76,9 +76,9 @@
 				background: url(//m.jr.jd.com/spe/qyy/main/images/icon_arrow1.png) center right no-repeat;
 				background-size: 18px 28px;
 				position: absolute;
-				top: 50%;
+				top: 66px;
 				right: 15px;
-				transform: translateY(-16px);
+				transform: translateY(-25px);
 			}
 		}
 	} 
