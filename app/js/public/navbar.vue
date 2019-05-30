@@ -34,11 +34,13 @@
 	.panel {
 		@include panel;
 		position: fixed;
+		margin: 0px;
     margin: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		height: 100px;
+		margin: 0px;
 		> h4 {
 			display: none;
 		}
@@ -72,6 +74,11 @@
 					white-space: nowrap;
 					text-overflow: ellipsis;
 					overflow: hidden;
+				}
+			}
+			li[class*=router-link-exact-active] {
+				em {
+					color: #DE9F4A;
 				}
 			}
 		}

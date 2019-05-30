@@ -1,5 +1,5 @@
 <template lang="html">
-	<div :class="[$style.shopItem, 'cname']">
+	<div :class="[$style.shopItem, cname]">
 		<div :class="$style.img_product">
 			<img :src="item.img_src" alt="404">
 		</div>
@@ -13,10 +13,10 @@
 		</div>
 		<div :class="$style.progress_warp">
 			<div :class="$style.progress">
-				<div :class="$style.progress_inner" :style="{ width: item.progress }">
+					<div :class="$style.progress_inner" :style="{ width: parseInt(item.progress) > 100 ? '100%' : item.progress }">
 				</div>
-				<span :class="$style.percent">{{  item.progress }}</span>
 			</div>
+			<span :class="$style.percent">{{  parseInt(item.progress) + '%' }}</span>
 		</div>
 	</div>
 </template>
@@ -42,7 +42,7 @@
 				type: String,
 				default: ''
 			}
-		}
+		},
 	}
 </script>
 
@@ -55,10 +55,12 @@
 		.img_product {
 			width: 100%;
 		  height: 100%;
-		  margin: 22px auto 10px;
+		  margin: 20px auto 10px;
 			img {
 				width: 100%;
 		    margin: 0px auto;
+		    padding: 0px 44px;
+		    box-sizing: border-box;
 			}
 		}
 		h5 {
@@ -66,14 +68,14 @@
 	    text-align: center;
 	    text-align: left;
 			font-family: PingFangSC-Regular;
-	    letter-spacing: -5px;
 	    font-size: 28px;
 	    margin: 22px 0px;
-	    height: 44rem;
-	    line-height: 44rem;
+	    height: 44px;
+	    line-height: 44px;
 	    white-space: nowrap;
 	    text-overflow: ellipsis;
 	    overflow: hidden;
+	    color: #333;
 		}
 		.price {
 	    font-family: DIN-Bold;
@@ -82,8 +84,9 @@
 	    height: 1.0625rem;
 	    line-height: 1.0625rem;
 	    padding-left: 30px;
+	    font-size: 30px;
 			.pro {
-		    font-size: .6875rem;
+		    font-size: 20px;
     		color: #f92;
 			}
 			.up {
@@ -93,7 +96,7 @@
 		    margin-left: 10px;
 			}
 		}
-		.rogress_warp {
+		.progress_warp {
 	    height: 30px;
 	    padding: 0 30px;
 	    margin-bottom: 26px;
@@ -116,12 +119,11 @@
   	    font-size: 20px;
 		    color: #999;
 		    letter-spacing: 3px;
-		    display: inline-block;
 		    height: 24px;
-		    line-height: .24px;
+		    line-height: 24px;
 		    text-align: center;
 		    float: left;
-		    margin-left: 6px;
+		    margin-left: 6px;	
 	    }
 		}
 	}

@@ -23,9 +23,6 @@
 	    Panel,
 	    Banner
 	  },
-	  created () {
-	  	console.log(this.bannerInfo.img_src)
-	  }
 	}
 </script>
 <style lang="scss" module>

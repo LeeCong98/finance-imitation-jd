@@ -9,7 +9,7 @@
 				<em>登录</em>
 			</a>
 		</span>
-		<btn :class="$style.btnDown">App下载</btn>	
+		<btn :class="$style.btnDown" to="{ name: 'down'}">App下载</btn>	
 	</div>
 </template>
 <script>

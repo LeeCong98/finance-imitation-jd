@@ -1,7 +1,7 @@
 <template lang="html">
-	<Panel :title="title" :class="$style.panel">
+	<Panel :title="title" :class="[$style.panel, cname]">
 		<ul :class="[$style.content, 'clearfix']">
-			<li :class="$style.item" v-for="item in lifeMenu" :key="item.menuWord">
+			<li :class="$style.item" v-for="item in items" :key="item.menuWord">
 				<img :src="item.img" alt="404">
 				<strong>{{ item.menuWord }}</strong>
 				<i>{{  item.trait }}</i>
@@ -12,12 +12,22 @@
 
 <script>
 	import Panel from './../core/panel.vue'
-	import { lifeMenu } from './../../model/home_model.js'
 	export default {
 		data () {
-			return {
-				title: '-生活服务-',
-				lifeMenu: lifeMenu
+			return {}
+		},
+		props: {
+			title: {
+				type: String,
+				default: ''
+			},
+			items: {
+				type: Array,
+				default: []
+			},
+			cname: {
+				type: String,
+				default: ''
 			}
 		},
 		methods: {

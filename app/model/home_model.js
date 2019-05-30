@@ -103,7 +103,10 @@ var commdItems = [
 		"//img12.360buyimg.com/jrpmobile/jfs/t15784/188/381232069/39444/8878571d/5a2f6a4aNbd5a574c.jpg?width=335&height=421"
 	}
 ]
-var lifeMenu = [
+var lifeMenu = [	
+	{
+		comTitle: '生活服务'
+	},
 	{
 		href: 'home',
 		img: '//img12.360buyimg.com/jrpmobile/jfs/t4375/104/1184122472/3976/89741da4/58be8a6eNf10193d0.png?width=135&height=135',
@@ -136,4 +139,33 @@ var lifeMenu = [
 	}
 ]
 
-export { items, entries, production, commdItems, lifeMenu }
+var footerInfo = {
+	footerBanner: {
+		img_src: '//img12.360buyimg.com/jrpmobile/jfs/t2842/350/3035567089/14791/5f6ff93d/577cf395N31e76288.png?width=1125&height=252',
+	},
+	version: [
+		{
+			vTitle: '客户端',
+			icon_src: '//img12.360buyimg.com/jrpmobile/jfs/t2971/333/1297567079/898/f2d2e00d/577dc28dNe5138337.png?width=108&height=108',
+
+		},
+		{
+			vTitle: '触屏版',
+			icon_src: '//img12.360buyimg.com/jrpmobile/jfs/t2824/256/2966087355/831/188bfa25/577cf3dcN18aadbf2.png?width=108&height=108'
+		},
+		{
+			vTitle: '平板设备',
+			icon_src: '//img12.360buyimg.com/jrpmobile/jfs/t2920/282/1283157010/1040/23f1430b/577cf3e5N53f740b8.png?width=108&height=108'
+		}
+	]
+}     
+var copyright = [
+	'Copyright © 2004-2018 京东JD.com 版权所有(非商业性仿站，请勿使用于商业)',
+	'投资有风险，购买需谨慎',
+	'京东金融平台服务协议',
+	'京东金融隐私政策'
+]        
+         
+        
+
+export { items, entries, production, commdItems, lifeMenu, footerInfo, copyright }
